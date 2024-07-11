@@ -1,0 +1,64 @@
+<!doctype>
+<html>
+    <head>
+        <title>Log IN | Car Dekho</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Logo-->
+        <link rel="icon" href="D:\IT_Vedant\Project\photo_2024-07-09_10-33-44.jpg" type="image/jpg">
+        <style>
+
+            body{
+                font-family: Arial, sans-serif;
+                ackground-color: rgba(205,209,210,255);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            form{
+                background-color: rgba(157,158,162,255);;
+                padding: 30px;
+                width: 400px;
+                border: 1px solid;
+                border-radius: 10px;
+            }
+            input[type="text"], input[type="password"], input[type="email"] {
+            width: calc(100% - 12px);
+            padding: 20px;
+            margin: 8px 0;
+            border: 2px solid #403e3e;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: rgb(1, 5, 1);
+            padding: 15px 2px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #18801d;
+        }
+            </style>
+        </head>
+        <body>
+        
+            <form id="loginForm" onsubmit="return validateForm()">
+                <h2><b><center><u>Login | Register</u></center></b></h2>
+                <label for="name">Name</label>
+                <input type="text" id="username" name="username" placeholder="Enter you name" required>
+
+                <label for="emailid">Email ID</label>
+                <input type="email" id="emailid" name="Email ID" placeholder="Enter mail ID" required>
+        
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                
+                <input type="submit" value="Login">
+                
+            </form>
+            </body>
+    </html>
